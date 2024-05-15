@@ -6,6 +6,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
+import { Page } from './pages/components/Page.jsx'
+
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,22 @@ const router = createBrowserRouter([
   {
     path: "/legacy",
     element: <App></App>,
+  },
+  {
+    path: "/home",
+    element: <Page>home page</Page>,
+  },
+  {
+    path: "/about-me",
+    element: <Page></Page>,
+  },
+  {
+    path: "/project",
+    element: <Page></Page>,
+  },
+  {
+    path: "/about-me",
+    element: <Page></Page>,
   },
 ]);
 
